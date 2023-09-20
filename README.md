@@ -96,19 +96,41 @@ You must also note down the FORM_ID. **Note** Refer to the next section on form 
 ```
 // Example
 const RECIPIENT_EMAILS = [<EMAIL-1>, <EMAIL-2>];
-const FORM_ID = "<FORM-ID>";
 ```
 
 ## Create Form
-Checkout this form template: ...
+Checkout this form template: https://forms.gle/Qaocz8ka7rUi9Srt7
+This form template is compatible with this google script. Regardless, the script/forms are highly customizable to your needs.
 
 ### Form ID Constant
+To get the form ID constant, just take a look at the URL of the form itself.
+![image](https://github.com/pvico12/google-form-to-jira/assets/73671546/cd1881e6-35dd-4d79-b742-cbad0120f5fb)
+You can notice it in the url.
+
+So, declare the constant accordingly:
+
+```
+// Example
+const FORM_ID = "1PvreiSergwUhIzbG8w0qCQ42ONG-wTa8i3GmiDU5TZY";
+```
+
+**Note** you need to link the form to google sheets in the form settings like so:
+![image](https://github.com/pvico12/google-form-to-jira/assets/73671546/310665a1-4025-4b14-b8ce-bdbd7b7b618c)
 
 
 # Deploy
 
 ## Setup Trigger
 
+The final step is to set up the trigger on the google script itself to run the ```handleForm()``` function once the script notices a new form response.
+
+![image](https://github.com/pvico12/google-form-to-jira/assets/73671546/41747831-752f-41e0-82f8-d73a7a262104)
+
+Once you updated the global constants, save your script and select the setupTrigger function in the menu dropdown, and Run it.
+
+Congratulations, you have now set up the trigger of your script to run the form handling function on every form request.
 
 
+# Help
 
+For any help needed, feel free to create an issue on this repository.
