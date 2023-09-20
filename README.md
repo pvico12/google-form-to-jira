@@ -30,12 +30,15 @@ const FORM_ID = "<FORM-ID>";
 1. User and API Key
 
    Once logged into JIRA, go to your personal account settings.
+   
    ![image](https://github.com/pvico12/google-form-to-jira/assets/73671546/5718ad87-3b36-4717-ac4e-762be7c5bff8)
 
    Go to Security Tab, and click on "Create and manage API tokens".
+   
    ![image](https://github.com/pvico12/google-form-to-jira/assets/73671546/28b6995e-0773-42d4-a5f3-e417b183f344)
 
    Create an API Token.
+   
    ![image](https://github.com/pvico12/google-form-to-jira/assets/73671546/a9b72b4b-af59-4875-8d58-c09bfa510131)
 
    Note down the token, and add it to the JIRA constants as shown in example below:
@@ -45,7 +48,7 @@ const FORM_ID = "<FORM-ID>";
    const JIRA_API_KEY = "abcdefghijklmnopqrstuvwxyz";
    ```
 
-2. Issue and Browsing URL
+3. Issue and Browsing URL
 
    Replace ```<YOUR-ORG>``` with your own organization name that you see in the URL when your JIRA platform is opened
    ```
