@@ -1,6 +1,8 @@
 # Google Form - JIRA Ticket Creation
 Google Script written to collect Bug Report / Feature Request from Google Form responses and create bug report / feature request tickets in JIRA.
 
+Attachments also work, woohoo!
+
 
 # Setup
 
