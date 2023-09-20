@@ -75,12 +75,17 @@ const JIRA_TICKET_FEATURE_REQUEST_KEY = "DEV-58";
 
 ### Project and Task Issue Type IDs
 
+Send a cURL GET request to ```https://<ORG-NAME>.atlassian.net/rest/api/latest/issuetype``` with Basic Authentication ```<JIRA_API_USER>:<JIRA_API_KEY>```.
 
+Example:
+![image](https://github.com/pvico12/google-form-to-jira/assets/73671546/c875fcfd-2d49-453d-97f9-6eae971ac2bc)
+
+In this case we see that the JIRA_PROJECT_ID is "10000" and the JIRA_TASK_ISSUE_TYPE is "10001".
 
 ```
 // Example
 const JIRA_TICKET_ID_JIRA_PROJECT_ID = "10000";
-const JIRA_TASK_ISSUE_TYPE = "10002"";
+const JIRA_TASK_ISSUE_TYPE = "10001"";
 ```
 
 
