@@ -29,7 +29,7 @@ const FORM_ID = "<FORM-ID>";
 
 ## JIRA Platform Constants
 
-1. User and API Key
+### User and API Key
 
    Once logged into JIRA, go to your personal account settings.
    
@@ -50,7 +50,7 @@ const FORM_ID = "<FORM-ID>";
    const JIRA_API_KEY = "abcdefghijklmnopqrstuvwxyz";
    ```
 
-3. Issue and Browsing URL
+### Issue and Browsing URL
 
    Replace ```<YOUR-ORG>``` with your own organization name that you see in the URL when your JIRA platform is opened
    ```
@@ -59,12 +59,45 @@ const FORM_ID = "<FORM-ID>";
    const JIRA_BROWSING_URL = "https://uber.atlassian.net/browse/";
    ```
 
+## JIRA Project Constants
+
+### Ticket Keys
+
+Go to your projects board/timeline and note down the keys of the 3 different Epic types
+![image](https://github.com/pvico12/google-form-to-jira/assets/73671546/ae64b3a0-4b15-4b4c-8387-b6da0e38bc57)
+
+```
+// Example
+const JIRA_TICKET_VISUAL_BUG_KEY = "DEV-56";
+const JIRA_TICKET_FUNCTIONAL_BUG_KEY = "DEV-57";
+const JIRA_TICKET_FEATURE_REQUEST_KEY = "DEV-58";
+```
+
+### Project and Task Issue Type IDs
+
+
+
+```
+// Example
+const JIRA_TICKET_ID_JIRA_PROJECT_ID = "10000";
+const JIRA_TASK_ISSUE_TYPE = "10002"";
+```
+
+
+## Google Script Constants
+
+You can create an array of recipient emails that will be notified every time someone submits a response to your form.
+You must also note down the FORM_ID. **Note** Refer to the next section on form creation to retrieve the form ID.
+```
+// Example
+const RECIPIENT_EMAILS = [<EMAIL-1>, <EMAIL-2>];
+const FORM_ID = "<FORM-ID>";
+```
 
 ## Create Form
+Checkout this form template: ...
 
-
-## Create Trigger
-
+### Form ID Constant
 
 
 # Deploy
